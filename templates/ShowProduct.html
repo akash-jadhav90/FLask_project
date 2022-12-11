@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHOW PRODUCTS</title>
+</head>
+<body>
+        <center><h3>List of Product</h3></center>
+        <a href="/wel">HOme</a><br><br>
+
+        <hr>
+
+        <center>{{result}}</center><br><br>
+        <table border="2">
+            <thead>
+                <th>PRoduct ID</th>
+                <th>PRoduct NAME</th>
+                <th>PRoduct QYT</th>
+                <th>PRoduct PRICE</th>
+                <th>ACTION</th>
+            </thead>
+
+                {% for produ in pro %}
+            <tr>
+                <td>{{produ.productid}}</td>
+                 <td>{{produ.productname}}</td>
+                 <td>{{produ.productqyt}}</td>
+                 <td>{{produ.productprice}}</td>
+
+                <td>
+                    <a href="/Edit/PRo/{{produ.productid}}">EDIT</a>
+                    <a href="/Delete/PRo/{{produ.productid}}">DELETE</a>
+                </td>
+
+            </tr>
+                    {% endfor %}
+        </table>
+
+
+</body>
+</html>

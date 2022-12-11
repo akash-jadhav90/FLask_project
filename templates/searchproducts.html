@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Product</title>
+</head>
+<body>
+        <a href="/wel">Home</a><br><br>
+        <form action="/serach/pro" method="post">
+            product id:<input type="text" name="proid" value=""><br><br>
+            <input type="submit"><br><br>
+        </form>
+            <table border="5">
+                <thead>
+                <th>PROduct of Show</th>
+
+                </thead>
+                <td>
+
+                     {% if products2 %}
+                <tr>
+
+                <td>{{products2}}</td>
+
+                 </tr>
+                    {% else %}
+                    NO FOUND PRODUCT......
+                    {% endif %}
+
+            </td>
+                </table>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD PRODUCTS </title>
+</head>
+      <center>ADD PRODUCT INFO</center>
+      <a href="/wel">HOME</a><br><br>
+          {{result}}<br><br>
+<body>
+
+      <form action="/SAVE/PRO" method="post">
+        Products id:<input type="text" name="proid" value="{{product1.productid}}"><br><br>
+        Products name:<input type="text" name="pronm" value="{{product1.productname}}"><br><br>
+        Products qyt:<input type="text" name="proqyt" value="{{product1.productqyt}}"><br><br>
+        Products price:<input type="text" name="proprice" value="{{product1.productprice}}"><br><br>
+        <input type="submit"><br>
+
+      </form>
+
+</body>
+</html>
